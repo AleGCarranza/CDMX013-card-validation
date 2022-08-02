@@ -1,0 +1,29 @@
+img{
+    margin-inline-start: 250px;
+}
+
+
+fieldset{
+    background-color: #6FD7A3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    width: 600px;
+    margin-inline-start: 250px;
+    border-radius: 7px;
+    
+}
+
+legend{background-color: rgb(244, 239, 239);
+    padding: 10px 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: larger;
+border-radius: 7px;}
+
+input {
+    margin: 15px;
+    
+}
+
+form{
+    text-align: left;
+}
