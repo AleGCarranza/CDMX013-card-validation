@@ -31,19 +31,25 @@ const validator = { //objeto
     
     if(plus%10==0){
       
-      document.getElementById("showValid").style.display= "block"
+      return true
       //alert ("Es válida")
       //console.log("es valida")
     } else {
       
-      alert ("Intenta de nuevo")
+      return false
       //console.log ("intenta de nuevo")
     }
 
     //console.log(valid)
 },
   maskify: function (numbersCard){
-   let gato=""
+    // Recibir 16 numeros en numbersCard 
+          // usar los ultimo 4 digitos
+     //return(numbersCard.slice(-4));
+    // Esconder los 12 numeros que no retorna slice
+  
+    
+  let gato=""
    for (let a=0; a<numbersCard.length; a++){
     if (a<numbersCard.length-4) {
       gato= gato+"#";
@@ -56,11 +62,8 @@ const validator = { //objeto
    console.log(gato)
    }
    return gato;
-   
-    // Recibir 16 numeros en numbersCard 
-    // usar los ultimo 4 digitos
-     // return(numbersCard.slice(-4));
-    // Esconder los 12 numeros que no retorna slice
+ 
+
  
 
 
