@@ -8,8 +8,12 @@ const validar= document.getElementById("validar")
 
 validar.addEventListener("click",function(){
     validator.isValid(creditCardNumber.value)// invocamos la funcion
+
 })
  
+creditCardNumber.addEventListener("change",function(){
+    validator.maskify(creditCardNumber.value)
+})
 
 
    

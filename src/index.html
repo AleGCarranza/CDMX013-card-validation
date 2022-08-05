@@ -6,36 +6,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  </header>
   <body>
     <img src="/imagenes/Cuidado Integral.png" height="120">
     <br>
     <br>
     <br>
-
-  <fieldset>
-      <legend>Agenda Ahora</legend>
-      <label for="cardnumber"> Número de tarjeta: </label>
-      <input type= "text" id="cardNumber" name= "cardNumber" placeholder="16 Dígitos" maxlength="16" required> <br>
-      <button type= "button"  id="validar">Validar</button>
+    <fieldset>
+      <legend>Paso 1. Elige una fecha </legend>
+      <label for="date"> Fecha de cita: </label>
+      <input type= "date" id="date" name= "apoinment"> 
+      
   </fieldset>
 
-<!--
+  <fieldset>
+      <legend>Paso 2. Validamos tu tarjeta </legend>
+      <label for="cardnumber"> Número de tarjeta: </label>
+      <input type= "text" id="cardNumber" name= "cardNumber" placeholder="Ingresa 16 Dígitos" minlength="16" maxlength="16" required> <br>
+      <button type= "button"  id="validar">Validar</button>
+      
+  </fieldset>
+
   <br>
+  <div id="showValid">
+    <p type= "text" id="messageValid"> ¡Tu tarjeta es válida!</p>
 <fieldset> 
-  <legend>Completa datos bancarios</legend>
-
-<label for="cardname"> Nombre del titular: </label>
-<input type="text" id="cardName" name="cardName">
-<br>
-<label> Fecha Caducidad</label> 
-<input placeholder="MM/AA">
-<label>CCV</label>
-<input type="password" id="ccv" maxlength="3"> <br>
-<button type= "button" >
-
+  <legend>Paso 3. Completa los datos bancarios</legend>
+  <label for="cardname"> Nombre del titular: </label>
+  <input type="text" id="cardName" name="cardName">
+  <br>
+  <label> Fecha Caducidad</label> 
+  <input placeholder="MM/AA">
+  <label>CCV</label>
+  <input type="password" id="ccv" maxlength="3"> <br>
+  <button type= "button" id="pagar">Pagar</button>
 </fieldset>
--->
+    </div>
+
+<br>
+<br>
+<footer>CONFIGURACION DE COOKIES - POLITICA PRIVACIDAD - CONDICIONES DE SERVICIO </footer>
 
 
 

@@ -1,5 +1,5 @@
 img{
-    margin-inline-start: 250px;
+    margin-inline-start: 150px;
 }
 
 
@@ -8,7 +8,8 @@ fieldset{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     width: 600px;
-    margin-inline-start: 250px;
+    margin-inline-start:200px;
+    margin-top: 20px;
     border-radius: 7px;
     
 }
@@ -16,14 +17,46 @@ fieldset{
 legend{background-color: rgb(244, 239, 239);
     padding: 10px 15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: larger;
+font-size: large;
 border-radius: 7px;}
 
 input {
     margin: 15px;
+    margin-inline-start:20px;
     
 }
 
 form{
     text-align: left;
+
 }
+ 
+footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+#showValid {
+    display: none
+}
+#messageValid {
+    text-align: left;
+    margin-inline-start: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color:#0ee72b
+}
+#validar,#pagar {
+    text-align:center;
+    margin-inline-start: 300px;
+    border-radius:7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+
+}
+#ccv{
+    size: 3px;
+}
+
+
