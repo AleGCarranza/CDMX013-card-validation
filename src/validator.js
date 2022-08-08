@@ -32,8 +32,7 @@ const validator = { //objeto
     if(plus%10==0){
       
       return true
-      //alert ("Es válida")
-      //console.log("es valida")
+      
     } else {
       
       return false
@@ -49,19 +48,19 @@ const validator = { //objeto
     // Esconder los 12 numeros que no retorna slice
   
     
-  let gato=""
+  let hash=""
    for (let a=0; a<numbersCard.length; a++){
     if (a<numbersCard.length-4) {
-      gato= gato+"#";
+      hash= hash+"#";
     
     } else {
-      gato= gato+numbersCard[a];
+      hash= hash+numbersCard[a];
 
     }
     
-   console.log(gato)
+   
    }
-   return gato;
+   return hash;
  
 
  
