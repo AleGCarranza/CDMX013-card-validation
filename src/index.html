@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content= "width=device-width, inicial-scale=1.0"/>
+    <title>Integral Care for Seniors</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <img src="/imagenes/Cuidado Integral.png" height="120">
-    <br>
-    <br>
-    <br>
-    <fieldset>
-      <legend>Paso 1. Elige una fecha </legend>
-      <label for="date"> Fecha de cita: </label>
-      <input type= "date" id="date" name= "apoinment"> 
-      
-  </fieldset>
+    <nav class="menu">
+      <div class="logo">
+        <img alt="logo-Ipsu" src="/imagenes/logo.png">
+      </div>
+      <div class="box">
+        <ul>
+          <li>Home</li>
+          <li>Appoinments</li>
+          <li><a href="https://docs.google.com/presentation/d/101-3hmLsqH8Fp4tkOTtAKukR6nRvjcbxTDBBRP9ZHeo/edit?usp=share_link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+<div class="images">
+  <img alt="seniors-yoga" src="/imagenes/mission.png">
+</div>
 
-  <fieldset>
-      <legend>Paso 2. Validamos tu tarjeta </legend>
-      <label for="cardnumber"> Número de tarjeta: </label>
-      <input type= "text" id="cardNumber" name= "cardNumber" placeholder="Ingresa 16 Dígitos" minlength="16" maxlength="16" required> <br>
-      <button type= "button"  id="validar">Validar</button>
-      
-  </fieldset>
 
-  <br>
+
+    <h1>Registration Form</h1>
+    <h2>Please fill out this form with the required information, to save de date</h2>
+    <form id="appoinment-form"type="submit">
+      <fieldset>
+        <legend>Information </legend>
+        <label for="first-name">First Name:<input id="first-name" name="first-name" type="text" required></label>
+        <label for="last-name">Last Name:<input id="last-name" name="last-name" type="text" required></label>
+        <label for="appoinment"> Appoinment date: <input id="appoinment" name="appoinment" type= "date" required></label>
+        <label>Preferred time:
+          <select>
+            <option>Select current time</option>
+            <option>08:00 am</option>
+            <option>09:00 am</option>
+            <option>10:00 am</option>
+            <option>11:00 am</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Credit Card Validation</legend>
+        <label for="cardNumber"> Card number:<input type= "text" id="cardNumber" name= "cardNumber" placeholder="Enter 16 Digits" minlength="16" maxlength="16" required>  </label>
+        <label for="expiration"> Expiration Year <input id="expiration" name="expiration" type="number" min="2023" max="2028" placeholder="YYYY" required>CCV <input id="ccv" name="code" type="password" id="ccv" maxlength="3" required></label>
+      </fieldset>
+      <label for="conditions"><input type="checkbox" required="true">I accept the <a>terms and conditions</a></label>
+      <button type="button" id="validate">Submit</button>
+  </form>
+
   <div id="showValid">
     <p type= "text" id="messageValid"> ¡Tu tarjeta es válida!</p>
-<fieldset> 
-  <legend>Paso 3. Completa los datos bancarios</legend>
-  <label for="cardname"> Nombre del titular: </label>
-  <input type="text" id="cardName" name="cardName">
-  <br>
-  <label> Fecha Caducidad</label> 
-  <input placeholder="MM/AA">
-  <label>CCV</label>
-  <input type="password" id="ccv" maxlength="3"> <br>
-  <button type= "button" id="pagar">Pagar</button>
-</fieldset>
+
+
+
     </div>
 
-<br>
-<br>
-<footer>CONFIGURACION DE COOKIES - POLITICA PRIVACIDAD - CONDICIONES DE SERVICIO </footer>
+<footer><a>CONFIGURE COOKIES</a> - <a>POLITIC PRIVACY</a> - <a>SERVICE CONDITIONS</a>  </footer>
 
 
 
