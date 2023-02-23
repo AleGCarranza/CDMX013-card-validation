@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="menu">
-      <div class="logo">
-        <img alt="logo-Ipsu" src="/imagenes/logo.png">
-      </div>
-      <div class="box">
-        <ul>
-          <li>Home</li>
-          <li>Appoinments</li>
-          <li><a href="https://docs.google.com/presentation/d/101-3hmLsqH8Fp4tkOTtAKukR6nRvjcbxTDBBRP9ZHeo/edit?usp=share_link">Contact</a></li>
+    <div class="container">
+    <header class="header">
+      <img class="header-img" src= "https://i.ibb.co/Tcv25w5/Logo.png" alt="Logo Ipsu" width="400">
+      <nav class="nav-bar">
+      <ul>
+        <li><a class="nav-link" href= "#Home">Home</a></li>
+        <li><a class="nav-link" href= "#Appoinments">Appoinments</a></li>
+        <li><a class="nav-link" href= "#Contact">Contact</a></li>
         </ul>
-      </div>
     </nav>
-<div class="images">
-  <img alt="seniors-yoga" src="/imagenes/mission.png">
-</div>
+    </header>
 
+  <!-- <section id="Home">
+    <video height="315" src="./imagenes/video.mp4">
+  </section> -->
 
-
+    <section id="Appoinments">
     <h1>Registration Form</h1>
     <h2>Please fill out this form with the required information, to save de date</h2>
-    <form id="appoinment-form"type="submit">
+    <form id="appoinment-form" type="submit">
       <fieldset>
         <legend>Information </legend>
-        <label for="first-name">First Name:<input id="first-name" name="first-name" type="text" required></label>
-        <label for="last-name">Last Name:<input id="last-name" name="last-name" type="text" required></label>
-        <label for="appoinment"> Appoinment date: <input id="appoinment" name="appoinment" type= "date" required></label>
-        <label>Preferred time:
-          <select>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name"required class="info-control">
+        <label for="appoinment"> Appoinment date:</label>
+        <input id="appoinment" name="appoinment" type= "date" required class="info-control">
+        <label>Preferred time:</label>
+          <select  class="info-control">
             <option>Select current time</option>
             <option>08:00 am</option>
             <option>09:00 am</option>
             <option>10:00 am</option>
             <option>11:00 am</option>
           </select>
-        </label>
+
       </fieldset>
       <fieldset>
         <legend>Credit Card Validation</legend>
@@ -54,10 +54,10 @@
 
   <div id="showValid">
     <p type= "text" id="messageValid"> ¡Tu tarjeta es válida!</p>
-
-
-
     </div>
+  </section>
+
+    <section id="Contact"></section>
 
 <footer><a>CONFIGURE COOKIES</a> - <a>POLITIC PRIVACY</a> - <a>SERVICE CONDITIONS</a>  </footer>
 
@@ -65,5 +65,6 @@
 
     <main></main>
     <script src="index.js" type="module"></script>
+  </div>
   </body>
 </html>
