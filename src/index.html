@@ -18,17 +18,18 @@
         </ul>
     </nav>
     </header>
-
-  <!-- <section id="Home">
+<section id="Home">
+  <h3>Welcome to our services, we glad to help you through this journey</h3>
+  <div>
     <video height="315" src="./imagenes/video.mp4">
-  </section> -->
+    </div>
+  </section>
+
 
     <section id="Appoinments">
     <h1>Registration Form</h1>
-    <h2>Please fill out this form with the required information, to save de date</h2>
+    <h4>Please fill out this form with the required information, to reserve an appoinment with our specialist</h2>
     <form id="appoinment-form" type="submit">
-      <fieldset>
-        <legend>Information </legend>
         <label for="name">Name:</label>
         <input id="name" name="name" type="text" placeholder="Enter your name"required class="info-control">
         <label for="appoinment"> Appoinment date:</label>
@@ -41,16 +42,13 @@
             <option>10:00 am</option>
             <option>11:00 am</option>
           </select>
-
-      </fieldset>
-      <fieldset>
-        <legend>Credit Card Validation</legend>
-        <label for="cardNumber"> Card number:<input type= "text" id="cardNumber" name= "cardNumber" placeholder="Enter 16 Digits" minlength="16" maxlength="16" required>  </label>
-        <label for="expiration"> Expiration Year <input id="expiration" name="expiration" type="number" min="2023" max="2028" placeholder="YYYY" required>CCV <input id="ccv" name="code" type="password" id="ccv" maxlength="3" required></label>
-      </fieldset>
-      <label for="conditions"><input type="checkbox" required="true">I accept the <a>terms and conditions</a></label>
-      <button type="button" id="validate">Submit</button>
-  </form>
+        <label for="cardNumber"> Card number: </label>
+        <input type= "text" id="cardNumber" name= "cardNumber" placeholder="Enter 16 Digits" minlength="16" maxlength="16" class="info-control" required>
+        <label for="expiration"> Expiration Date </label>
+        <input id="expiration" name="expiration" type="number" min="2023" max="2028" placeholder="YYYY" class="info-control min" required >
+        <label for="conditions"><input type="checkbox"  class="input-check" required="true">I accept the <a>terms and conditions</a></label>
+        <button type="button" id="validate">Submit</button>
+     </form>
 
   <div id="showValid">
     <p type= "text" id="messageValid"> ¡Tu tarjeta es válida!</p>
